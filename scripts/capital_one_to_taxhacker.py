@@ -264,4 +264,4 @@ if __name__ == "__main__":
         sys.exit(1)
     
     print(f"\n✅ Extracted {count} transactions to {args.output}")
-    print(f"📁 Import at: http://localhost:7331/import/csv")
+    print(f"📁 Import at: http://your-taxhacker-server/import/csv")

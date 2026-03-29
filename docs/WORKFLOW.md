@@ -64,7 +64,7 @@ python3 ~/.openclaw/workspace/skills/pdf-processing/scripts/capital_one_to_taxha
 
 | Project | Description Keywords |
 |---------|---------------------|
-| **etsy-shop** | stripe, paypal, invoice |
+| **business** | stripe, paypal, invoice |
 | **investments** | dividend, brokerage |
 | **personal** | Everything else (default) |
 
