@@ -16,9 +16,10 @@ DEFAULT_PROJECT = 'personal'
 DEFAULT_CURRENCY = 'USD'
 
 # Project auto-assignment rules based on description patterns
+# Customize these keywords to match YOUR projects and transactions
 PROJECT_RULES = {
-    'etsy-shop': ['etsy', 'printify', 'shopify', 'ebay', 'craft', 'art studio', 'openrouter'],
-    'investments': ['stock', 'dividend', 'brokerage', 'fidelity', 'schwab', 'vanguard'],
+    'business': ['stripe', 'paypal', 'invoice', 'client'],   # Business income
+    'investments': ['dividend', 'brokerage', 'stock'],        # Investment activity
     # Everything else → personal (default)
 }
 
@@ -263,4 +264,4 @@ if __name__ == "__main__":
         sys.exit(1)
     
     print(f"\n✅ Extracted {count} transactions to {args.output}")
-    print(f"📁 Import at: http://your-taxhacker-server:3000/import/csv")
+    print(f"📁 Import at: http://localhost:7331/import/csv")
