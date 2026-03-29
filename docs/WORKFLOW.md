@@ -47,7 +47,7 @@ python3 ~/.openclaw/workspace/skills/pdf-processing/scripts/capital_one_to_taxha
 - `currencyCode` — "USD"
 - `type` — "income" or "expense"
 - `categoryCode` — Auto-detected category (transportation, food-and-drinks, etc.)
-- `projectCode` — Auto-assigned project (personal, etsy-shop, investments)
+- `projectCode` — Auto-assigned project (personal, business, investments)
 - `issuedAt` — Date in YYYY-MM-DD format
 - `note` — Source PDF filename
 
@@ -64,8 +64,8 @@ python3 ~/.openclaw/workspace/skills/pdf-processing/scripts/capital_one_to_taxha
 
 | Project | Description Keywords |
 |---------|---------------------|
-| **etsy-shop** | etsy, printify, shopify, ebay, openrouter |
-| **investments** | stock, dividend, brokerage, fidelity, schwab |
+| **etsy-shop** | stripe, paypal, invoice |
+| **investments** | dividend, brokerage |
 | **personal** | Everything else (default) |
 
 To customize, edit `PROJECT_RULES` in the script.
