@@ -35,7 +35,7 @@ def detect_project(description: str, category: str) -> str:
 CATEGORY_PATTERNS = {
     'income': ['direct deposit', 'deposit from', 'transfer from', 'interest'],
     'food-and-drinks': ['whole foods', 'heb', 'h-e-b', 'grocery', 'restaurant', 'starbucks', 'mcdonald', 'chipotle', 'uber eats', 'doordash', 'grubhub'],
-    'shopping': ['amazon', 'target', 'walmart', 'costco', 'best buy', 'apple store', 'etsy'],
+    'shopping': ['amazon', 'target', 'walmart', 'costco', 'best buy', 'apple store'],
     'transportation': ['shell', 'exxon', 'chevron', 'uber', 'lyft', 'gas', 'fuel', 'parking', 'toll'],
     'entertainment': ['netflix', 'spotify', 'hulu', 'disney', 'amc', 'regal', 'cinema', 'theater', 'gaming'],
     'utilities': ['att', 'at&t', 'verizon', 't-mobile', 'comcast', 'electric', 'water', 'gas bill', 'internet'],
