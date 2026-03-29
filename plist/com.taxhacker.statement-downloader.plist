@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.taxhacker.statement-downloader</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/python3</string>
+        <string>/Users/brianvassell/.openclaw/workspace/skills/pdf-processing/scripts/capital_one_to_taxhacker.py</string>
+        <string>/Users/brianvassell/Downloads/capital_one_statements/</string>
+        <string>/Users/brianvassell/Downloads/capital_one_import.csv</string>
+    </array>
+    
+    <key>WorkingDirectory</key>
+    <string>/Users/brianvassell</string>
+    
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>2</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    
+    <key>StandardOutPath</key>
+    <string>/tmp/taxhacker_downloader.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>/tmp/taxhacker_downloader.err</string>
+    
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>
