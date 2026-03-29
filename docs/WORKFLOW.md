@@ -34,7 +34,7 @@ mv ~/Downloads/*Bank*statement*.pdf ~/Downloads/capital_one_statements/
 
 ```bash
 # Convert all statements to TaxHacker CSV
-python3 ~/.openclaw/workspace/skills/pdf-processing/scripts/capital_one_to_taxhacker.py \
+python3 scripts/capital_one_to_taxhacker.py \
     ~/Downloads/capital_one_statements/ \
     ~/Downloads/capital_one_taxhacker.csv
 ```
