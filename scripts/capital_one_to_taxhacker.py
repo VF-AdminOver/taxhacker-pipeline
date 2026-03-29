@@ -33,16 +33,16 @@ def detect_project(description: str, category: str) -> str:
 
 # Category detection patterns
 CATEGORY_PATTERNS = {
-    'income': ['direct deposit', 'deposit from', 'transfer from', 'interest'],
-    'food-and-drinks': ['whole foods', 'heb', 'h-e-b', 'grocery', 'restaurant', 'starbucks', 'mcdonald', 'chipotle', 'uber eats', 'doordash', 'grubhub'],
-    'shopping': ['amazon', 'target', 'walmart', 'costco', 'best buy', 'apple store'],
-    'transportation': ['shell', 'exxon', 'chevron', 'uber', 'lyft', 'gas', 'fuel', 'parking', 'toll'],
-    'entertainment': ['netflix', 'spotify', 'hulu', 'disney', 'amc', 'regal', 'cinema', 'theater', 'gaming'],
-    'utilities': ['att', 'at&t', 'verizon', 't-mobile', 'comcast', 'electric', 'water', 'gas bill', 'internet'],
-    'health': ['cvs', 'walgreens', 'pharmacy', 'doctor', 'medical', 'dental', 'vision'],
+    'income': ['direct deposit', 'deposit from', 'transfer from', 'interest', 'payment received'],
+    'food-and-drinks': ['grocery', 'restaurant', 'cafe', 'coffee', 'food', 'dining', 'pizza', 'takeout'],
+    'shopping': ['amazon', 'target', 'walmart', 'costco', 'best buy', 'online', 'store', 'shop'],
+    'transportation': ['gas station', 'fuel', 'ride', 'taxi', 'parking', 'toll', 'transit'],
+    'entertainment': ['streaming', 'theater', 'cinema', 'gaming', 'music', 'movie'],
+    'utilities': ['phone', 'internet', 'electric', 'water', 'gas bill', 'cable'],
+    'health': ['pharmacy', 'doctor', 'medical', 'dental', 'vision', 'hospital'],
     'subscriptions': ['subscription', 'monthly', 'annual', 'membership'],
-    'transfers': ['zelle', 'transfer', 'withdrawal to', 'deposit from'],
-    'bills': ['carmax', 'financing', 'payment to'],
+    'transfers': ['transfer', 'withdrawal', 'deposit from', 'zelle', 'venmo'],
+    'bills': ['payment to', 'financing', 'loan', 'mortgage', 'rent'],
 }
 
 def detect_category(description: str) -> str:
@@ -264,4 +264,4 @@ if __name__ == "__main__":
         sys.exit(1)
     
     print(f"\n✅ Extracted {count} transactions to {args.output}")
-    print(f"📁 Import at: http://your-taxhacker-server/import/csv")
+    print(f"📁 Import at: http://localhost:7331/import/csv")

@@ -42,7 +42,7 @@
 
 **Bug:** Transactions dated "2028" instead of "2026".
 
-**Root Cause:** Address line "90210-1234" contained a 4-digit number that matched the year regex.
+**Root Cause:** Address line "XXXXX-XXXX" contained a 4-digit number that matched the year regex.
 
 **Fix:** Extract year from statement period text ("Feb 1 - Feb 28, 2026") first, then fall back to other patterns.
 

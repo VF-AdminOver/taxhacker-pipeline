@@ -75,7 +75,7 @@ To customize, edit `PROJECT_RULES` in the script.
 Categories are auto-detected from description keywords:
 - **income** — Direct deposits, transfers in
 - **food-and-drinks** — Restaurants, grocery stores
-- **shopping** — Amazon, Target, Walmart, Etsy
+- **shopping** — Amazon, Target, Walmart, online retailers
 - **transportation** — Gas stations, ride-sharing
 - **entertainment** — Streaming, theaters
 - **utilities** — Phone, internet, electric

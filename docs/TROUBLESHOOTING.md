@@ -16,7 +16,7 @@
 
 ### Year shows as 2028 instead of 2026
 
-**Cause:** Zip code (e.g., "90210-1234") being parsed as year.
+**Cause:** Zip code (e.g., "XXXXX-XXXX") being parsed as year.
 
 **Fix:** Run latest script with improved year extraction logic.
 

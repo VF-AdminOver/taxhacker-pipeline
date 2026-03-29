@@ -7,7 +7,7 @@ Convert Capital One bank statements (PDF) to TaxHacker-compatible CSV for automa
 - **PDF to CSV conversion** — Extracts transactions from Capital One PDF statements
 - **Multi-page support** — Processes all pages, deduplicates transactions
 - **Auto-categorization** — Detects categories (food, transport, shopping, etc.)
-- **Auto-project assignment** — Routes transactions to correct projects (Etsy, Personal, Investments)
+- **Auto-project assignment** — Routes transactions to correct projects (customizable)
 - **Multi-month batch** — Processes multiple statements at once
 - **TaxHacker-compatible** — CSV format matches TaxHacker's import schema exactly
 
